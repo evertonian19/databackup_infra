@@ -22,6 +22,7 @@ terraform {
       source  = "cloudflare/cloudflare"
       version = "~> 4.0"
     }
+    
 
   }
   # terraform 상태관리 (CI/CD)
