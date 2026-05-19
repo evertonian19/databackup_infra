@@ -18,6 +18,7 @@ data "aws_availability_zones" "available" {
 }
 
 
+
 # public subnet
 resource "aws_subnet" "ccmall_public_subnet" {
   vpc_id                  = aws_vpc.ccmall_vpc.id
