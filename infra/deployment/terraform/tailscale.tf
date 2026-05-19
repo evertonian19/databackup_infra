@@ -15,8 +15,8 @@ data "tailscale_device" "rec_device" {
   depends_on = [terraform_data.bootstrap_user1]
 }
 
-resource "tailscale_device_subnet_routes" "approve_vpc_routes" {
-  device_id = data.tailscale_device.rec_device.id
-  routes    = [aws_vpc.ccmall_vpc.cidr_block]
-}
+#resource "tailscale_device_subnet_routes" "approve_vpc_routes" {
+ # device_id = data.tailscale_device.rec_device.id
+  #routes    = [aws_vpc.ccmall_vpc.cidr_block]
+#}
 
