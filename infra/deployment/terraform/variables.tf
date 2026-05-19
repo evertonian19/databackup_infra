@@ -21,7 +21,7 @@ variable "tailscale_api_key" {
 }
 
 
-variable "s3_bucket_name" {
+variable "S3_BUCKET_NAME" {
   description = "ccmall-bucket-7129b8ca"
   type        = string
 }
