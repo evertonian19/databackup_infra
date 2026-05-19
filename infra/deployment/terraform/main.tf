@@ -61,3 +61,4 @@ output "s3_bucket_name" {
   description = "S3 bucket 이름"
   value       = data.aws_s3_bucket.ccmall_bucket.bucket
 }
+
