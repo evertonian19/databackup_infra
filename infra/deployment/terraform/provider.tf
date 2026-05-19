@@ -26,10 +26,10 @@ terraform {
   }
   # terraform 상태관리 (CI/CD)
   backend "s3" {
-    bucket         = "vertonian19-tfstate-ccmall"
+    bucket         = "ccmall-bucket-7129b8ca"
     key            = "deployment/terraform.tfstate"
     region         = "ap-northeast-2"
-    dynamodb_table = "ccmall-bucket-7129b8ca" # 미리 준비된 dynamodb 테이블
+    dynamodb_table = "ccmall-terraform-lock" # 미리 준비된 dynamodb 테이블
     encrypt        = true
   }
 }
