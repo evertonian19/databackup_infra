@@ -19,6 +19,7 @@ resource "aws_instance" "ccmall_rec" {
     delete_on_termination = true
   }
 
+
   # 서버 생성 시 hostname을 Rec으로 변경한다.
   # --- tailscale 설정 스크립트
   user_data = <<-EOF
