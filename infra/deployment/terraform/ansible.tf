@@ -95,7 +95,7 @@ resource "terraform_data" "bootstrap_user1" {
 
       # ccmall-key.pem의 공개키를 ccmall-key.pem.pub으로 저장
       # 이후 user1의 authorized_keys에 ccmall-key.pem.pub이 등록된다.
-      #2ssh-keygen -y -f ${local.ccmall_ssh_key_file} > ${local.ccmall_ssh_key_file}.pub
+      ssh-keygen -y -f ${local.ccmall_ssh_key_file} > ${local.ccmall_ssh_key_file}.pub
 
       echo "======================================"
       echo " Ansible Bootstrap Playbook 시작!"
