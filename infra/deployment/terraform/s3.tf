@@ -5,8 +5,8 @@ resource "random_id" "ccmall_bucket_suffix" {
 }
 
 # 최종 S3 버킷명
-resource "aws_s3_bucket" "ccmall_bucket" {
-  bucket = "var.s3_bucket_name"
+data "aws_s3_bucket" "ccmall_bucket" {
+  bucket = var.s3_bucket_name
 }
 
 # EC2가 S3에 접근할 IAM Role
