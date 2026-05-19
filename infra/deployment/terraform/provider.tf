@@ -36,6 +36,7 @@ terraform {
   }
 }
 
+
 # --- tailscale api 키는 일단 tfvars에 보관.
 provider "tailscale" {
   api_key = var.tailscale_api_key
