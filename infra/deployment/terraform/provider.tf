@@ -28,7 +28,7 @@ terraform {
   }
   # terraform 상태관리 (CI/CD)
   backend "s3" {
-    bucket         = "ccmall-bucket-7129b8ca"
+    bucket         = "evertonian19-tfstate-ccmall"
     key            = "deployment/terraform.tfstate"
     region         = "ap-northeast-2"
     dynamodb_table = "ccmall-terraform-lock" # 미리 준비된 dynamodb 테이블

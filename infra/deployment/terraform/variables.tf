@@ -20,9 +20,8 @@ variable "tailscale_api_key" {
   sensitive   = true
 }
 
-# S3 버킷 prefix를 외부에서 주입받는다.
-variable "s3_bucket_prefix" {
-  description = "CCmall S3 bucket prefix"
+variable "s3_bucket_name" {
+  description = "ccmall-bucket-7129b8ca"
   type        = string
 }
 
