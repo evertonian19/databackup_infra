@@ -62,3 +62,5 @@ output "s3_bucket_name" {
   value       = data.aws_s3_bucket.ccmall_bucket.bucket
 }
 
+
+
