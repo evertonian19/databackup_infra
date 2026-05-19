@@ -20,3 +20,4 @@ resource "tailscale_device_subnet_routes" "approve_vpc_routes" {
   routes    = [aws_vpc.ccmall_vpc.cidr_block]
 }
 
+
