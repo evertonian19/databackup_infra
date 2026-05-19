@@ -50,3 +50,4 @@ Thumbs.db
 *.pem
 *.key
 .ccmall-key.pem.pub
+ansiblekey.pem
