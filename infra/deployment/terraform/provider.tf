@@ -24,6 +24,7 @@ terraform {
     }
     
 
+
   }
   # terraform 상태관리 (CI/CD)
   backend "s3" {
